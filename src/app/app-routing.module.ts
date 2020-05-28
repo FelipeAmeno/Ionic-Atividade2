@@ -10,6 +10,14 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'post',
+    loadChildren: () => import('./Post/post/post.module').then( m => m.PostPageModule)
+  },
+  {
+    path: 'adicionar-posts',
+    loadChildren: () => import('./Adicionar/adicionar-posts/adicionar-posts.module').then( m => m.AdicionarPostsPageModule)
   }
 ];
 
